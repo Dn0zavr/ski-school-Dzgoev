@@ -1,0 +1,54 @@
+/* header */
+.phone-number {
+  /* position: absolute;
+  width: 256px;
+  height: 34px;
+  right: 81px;
+  top: calc(50% - 34px/2); */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #060D10;
+}
+
+/* main */
+
+/* section about */
+
+.about h1 {
+  /* position: absolute;
+  width: 1278px;
+  height: 89px;
+  left: 81px;
+  top: 240px; */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+  /* color: #FFFFFF; */
+}
+.about-info {
+  /* position: absolute;
+  height: 117px;
+  left: 190px;
+  right: 190px;
+  top: 389px; */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* color: #FFFFFF */
+}
