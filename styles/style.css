@@ -1,54 +1,179 @@
-/* header */
-.phone-number {
-  /* position: absolute;
-  width: 256px;
-  height: 34px;
-  right: 81px;
-  top: calc(50% - 34px/2); */
-
-  font-family: Montserrat;
+/* montserrat-regular - cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v18-cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/montserrat-v18-cyrillic-regular.woff') format('woff');
+}
+/* montserrat-500 - cyrillic */
+@font-face {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 34px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  src: local(''),
+       url('../fonts/montserrat-v18-cyrillic-500.woff2') format('woff2'),
+       url('../fonts/montserrat-v18-cyrillic-500.woff') format('woff');
+}
+
+/* oswald-regular - cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/oswald-v40-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v40-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oswald-500 - cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/oswald-v40-cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v40-cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Common */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
   color: #060D10;
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+}
+
+/* buttons */
+
+
+
+/* header */
+.header {
+  padding-top: 34px;
+  padding-bottom: 33px;
+  background-color: #66d1ff;
+  color: #060D10;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {}
+
+
+
+
 /* main */
 
-/* section about */
+/* about */
+.about {
+  color: #fff;
+  text-align: center;
+  background-image: url('../image/about-promo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-.about h1 {
-  /* position: absolute;
-  width: 1278px;
-  height: 89px;
-  left: 81px;
-  top: 240px; */
-
+.about-bg-fade {
+  padding: 230px 0;
+  background-color: rgba(6, 13, 16, 0.25);
+}
+.about-title {
+  padding-top: 140px;
+  padding-left: 81px;
+  padding-right: 81px;
   font-family: Oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 89px;
-  /* color: #FFFFFF; */
 }
 .about-info {
-  /* position: absolute;
-  height: 117px;
-  left: 190px;
-  right: 190px;
-  top: 389px; */
-
+  padding-bottom: 260px;
+  padding-left: 190px;
+  padding-right: 190px;
   font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* color: #FFFFFF */
 }
+
+/* advantages */
+.advantages {
+  /* padding-top: 350px; */
+  /* padding-bottom: 170px; */
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.advantages-title {
+  margin-top: 170px;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 167%;
+  text-align: center;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 81px;
+  padding-right: 81px;
+  padding-bottom: 170px;
+  margin: 0 -15px;
+}
+
+.advantages-item {
+  width: 33%;
+  padding: 15px;
+}
+
+.advantages-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, .1);  для просмотра границ */
+}
+.advantages-heading {
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 167%;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+.advantages-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 140%;
+  margin: 0;
+}
+
+
+/* lead */
+
+.lead-visual {}
