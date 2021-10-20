@@ -48,19 +48,37 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 1280px;
   margin: 0 auto;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
 a {
   color: inherit;
 }
 
 /* buttons */
+
+.btn {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  padding: 8px 41px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-lead {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 107px;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 36px;
+  font-weight: 500;
+}
 
 
 
@@ -78,8 +96,10 @@ a {
   justify-content: space-between;
 }
 
-.logo {}
-
+.phone-number {
+  font-size: 28px;
+  line-height: 34px;
+}
 
 
 
@@ -96,84 +116,175 @@ a {
 }
 
 .about-bg-fade {
-  padding: 230px 0;
-  background-color: rgba(6, 13, 16, 0.25);
+ background-color: rgba(6, 13, 16, .25);
 }
-.about-title {
+
+.about-wrap {
   padding-top: 140px;
-  padding-left: 81px;
-  padding-right: 81px;
+  padding-bottom: 260px;
+}
+
+.about-title {
+  margin: 0 auto;
   font-family: Oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 89px;
+  text-shadow: 1px 1px 2px #060D10;
 }
 .about-info {
-  padding-bottom: 260px;
-  padding-left: 190px;
-  padding-right: 190px;
+  margin: 0 110px;
+  padding-top: 60px;
   font-family: Montserrat;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
 /* advantages */
 .advantages {
-  /* padding-top: 350px; */
-  /* padding-bottom: 170px; */
+  padding-top: 170px;
+  padding-bottom: 170px;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+  background-color: rgba(102, 209, 255, .1);
 }
 .advantages-title {
-  margin-top: 170px;
+  margin: 0 auto;
+  text-align: center;
   font-family: Oswald;
   font-weight: 500;
   font-size: 48px;
   line-height: 167%;
-  text-align: center;
 }
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding-left: 81px;
-  padding-right: 81px;
-  padding-bottom: 170px;
-  margin: 0 -15px;
+  margin: auto -15px;
+  padding-left: 0;
+  padding-top: 100px;
 }
 
 .advantages-item {
-  width: 33%;
-  padding: 15px;
-}
-
-.advantages-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, .1);  для просмотра границ */
+  width: 33.33%;
+  padding: 0 15px;
 }
+
 .advantages-heading {
+  margin-bottom: 25px;
+  margin-top: 0;
   font-family: Oswald;
   font-weight: 500;
   font-size: 32px;
   line-height: 167%;
-  margin-bottom: 25px;
-  margin-top: 0;
+
 }
 .advantages-text {
+  margin: 0;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 26px;
   line-height: 140%;
-  margin: 0;
+  /* color: #060D10; */
+  opacity: 0.8;
 }
 
 
 /* lead */
 
-.lead-visual {}
+.lead {
+  padding-top: 170px;
+  padding-bottom: 180px;
+  text-align: center;
+  background-image: linear-gradient(200.8deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
+}
+
+.lead-title {
+  margin: 0 auto;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 167%;
+}
+
+.btn-lead {
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+
+.lead-visual {
+  display: flex;
+  margin-left: -30px;
+}
+
+.lead-visual-pic {
+  padding-left: 30px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #060D10;
+  color: #fff;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.join-us {
+  margin-right: 30px;
+  margin-left: 17px;
+  margin-top: 39px;
+  margin-bottom: 39px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 167%;
+}
+
+.copyright {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Social-icons */
+
+.social-icons {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item {
+  margin-left: 20px;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-text {
+  font-size: 1px;
+  opacity: 0;
+}
